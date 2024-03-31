@@ -23,8 +23,8 @@ a:focus,
 a:active {
   outline: none;
   user-select: none;
+  text-decoration: none;
 }
-
 nav,
 footer,
 header,
@@ -225,6 +225,7 @@ header{
   color: #005317;
   font-size: 64px;
   font-weight: bold;
+  text-decoration: none;
 }
 body.dark_mode .logo__text{
   color: #5EBE20;
@@ -296,10 +297,12 @@ body.dark_mode .switch{
 }
 /* -------------------page------------------- */
 section {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
-.page {}
+.page {
+  margin-bottom: 0;
+}
 
 .page__body {}
 
@@ -469,10 +472,12 @@ body.dark_mode .spoiler__title{
 .theory__item._active .spoiler__plus {
   transform: rotate(45deg);
 }
-
+.carousel-inner{
+  border-radius: 20px;
+  overflow: hidden;
+}
 .spoiler__img {
   overflow: hidden;
-  border-radius: 20px;
   position: relative;
 }
 
@@ -1095,4 +1100,20 @@ body.dark_mode .footer__copyright{
     text-align: center;
     color: white;
   }
+}
+
+
+.spoiler__title{
+  display: inline-block;
+}
+.spoiler-title{
+  position: relative;
+  padding: 0 70px;
+}
+.spoiler-title::before{
+  content: attr(data-num);
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }

@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // document.querySelector('body').classList.remove('_lock');
     // document.querySelector('.preloader').classList.add('_un_active');
 
+    const spoilers = document.querySelectorAll('article.spoiler');
+
+    for (let spoiler of spoilers){
+        let spoilerTitle = spoiler.querySelector(".spoiler_title");
+        if (spoilerTitle){
+            spoilerTitle.classList.add("text-truncate");
+            spoilerTitle.setAttribute('data-num', `${+spoiler.dataset.id + 1}. `);
+        }
+    }
+
     // lazy load 
     const images = document.querySelectorAll('img[data-src]');
     const videos = document.querySelectorAll('iframe[data-src-video]');
@@ -183,11 +193,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
             let hideSpoiler = theoryItem.querySelector('.spoiler__hide');
             if (hideSpoiler) {
+                let spoilerTitle = theoryItem.querySelector(".spoiler_title");
+
                 if (!theoryItem.classList.contains('_active')) {
                     _slideDown(hideSpoiler, theoryItem, 300);
+                    if (spoilerTitle){
+                        spoilerTitle.classList.remove("text-truncate");
+                    }
                 } else {
                     _slideUp(hideSpoiler, theoryItem, 300);
-
+                    if (spoilerTitle){
+                        spoilerTitle.classList.add("text-truncate");
+                    }
                 }
             }
         }
