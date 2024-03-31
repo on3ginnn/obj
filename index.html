@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -20,6 +20,21 @@
 </head>
 
 <body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div href="./assets/img/titles/title-1/title_1.png" class="spoiler__img">
+            <img data-src='./assets/img/titles/title-1/title_1.png' src="./assets/img/1x1.png" alt="theory_bg.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="wrapper">
     <header>
       <div class="header__body _container">
@@ -75,7 +90,7 @@
             </div>
             <div class="page__flexbox-right">
               <div class="page__img">
-                <img data-src="assets/img/bg11.png" src="assets/img/bg11.png" alt="bg.png" />
+                <img data-src="./assets/img/bg11.png" src="./assets/img/1x1.png" alt="bg.png" />
               </div>
             </div>
           </div>
@@ -99,12 +114,15 @@
                     <div id="carouselExample" class="carousel slide">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <div class="spoiler__img">
-                            <img data-src='./assets/img/theory_bg.jpg' src="assets/img/1x1.png" alt="theory_bg.jpg" />
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                          </button>
+                          <div href="./assets/img/titles/title-1/title_1.png" class="spoiler__img">
+                            <img data-src='./assets/img/titles/title-1/title_1.png' src="./assets/img/1x1.png" alt="theory_bg.jpg" />
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <div class="spoiler__img">
+                          <div href="" class="spoiler__img">
                             <img data-src='./assets/img/theory_bg.jpg' src="assets/img/1x1.png" alt="theory_bg.jpg" />
                           </div>
                         </div>

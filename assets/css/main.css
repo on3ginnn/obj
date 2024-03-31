@@ -489,6 +489,7 @@ body.dark_mode .spoiler__title{
   overflow: hidden;
 }
 .spoiler__img {
+  display: block;
   overflow: hidden;
   position: relative;
 }
