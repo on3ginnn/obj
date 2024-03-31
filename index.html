@@ -21,7 +21,7 @@
 
 <body>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
@@ -29,7 +29,22 @@
         </div>
         <div class="modal-body">
           <div href="./assets/img/titles/title-1/title_1.png" class="spoiler__img">
-            <img data-src='./assets/img/titles/title-1/title_1.png' src="./assets/img/1x1.png" alt="theory_bg.jpg" />
+            <img data-src='./assets/img/titles/title-1/title_1.png' src="./assets/img/1x1.png" alt="./assets/img/titles/title-1/title_1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div href="./assets/img/titles/title-1/title_1_2.png" class="spoiler__img">
+            <img data-src='./assets/img/titles/title-1/title_1_2.png' src="./assets/img/1x1.png" alt="./assets/img/titles/title-1/title_1_2.png" />
           </div>
         </div>
       </div>
@@ -124,9 +139,9 @@
                           </a>
                         </div>
                         <div class="carousel-item">
-                          <div class="spoiler__img">
-                            <img data-src='./assets/img/theory_bg.jpg' src="assets/img/1x1.png" alt="theory_bg.jpg" />
-                          </div>
+                          <a href="./assets/img/titles/title-1/title_1_2.png" class="spoiler__img" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <img data-src='./assets/img/titles/title-1/title_1_2.png' src="assets/img/1x1.png" alt="./assets/img/titles/title-1/title_1_2.png" />
+                          </a>
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
