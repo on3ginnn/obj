@@ -369,8 +369,14 @@ body.dark_mode .btn{
   flex: 0 0 37.6666%;
 }
 
-.page__img {}
-
+.page__img{
+  position: relative;
+}
+.page__img img {
+  /* position: absolute; */
+  width: 100%;
+  object-fit: cover;
+}
 h2 {
   line-height: 110%;
   text-align: center;
@@ -706,14 +712,6 @@ body.dark_mode .footer__copyright{
 
   .btn {
     font-size: 16px;
-  }
-  .page__img{
-    position: relative;
-  }
-  .page__img img {
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
   }
 
   /* -----------------Chel---------------- */
