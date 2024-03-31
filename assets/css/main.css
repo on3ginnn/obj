@@ -78,8 +78,12 @@ a:hover {
 
 ul li {
   list-style: none;
-}
 
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
 img {
   vertical-align: top;
 }
@@ -252,7 +256,9 @@ body.dark_mode .logo__text{
   font-weight: 500;
   transition: color 0.1s ease 0s;
 }
-
+.nav__item a{
+  color: #B27E1E;
+}
 .nav__item:hover {
   color: #019E90;
 }
@@ -439,7 +445,7 @@ body.dark_mode .spoiler__plus span {
 .spoiler__title {
   flex: 1 1 100%;
   line-height: 110%;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   font-size: 48px;
 }
@@ -553,7 +559,20 @@ body.dark_mode .link::after{
   padding: 10px 15px;
   line-height: 110%;
 }
+.spoiler__title{
+  display: inline-block;
+}
+.spoiler-title{
+  position: relative;
+  padding: 0 30px 0 70px;
+}
+.spoiler-title::before{
+  content: attr(data-num);
+  position: absolute;
+  top: 0;
+  left: 0;
 
+}
 /* --------------------prof------------------------ */
 .prof__img {
   overflow: hidden;
@@ -627,6 +646,19 @@ body.dark_mode .footer__copyright{
 }
 /* Media запросов */
 @media (max-width: 992px) {
+  .spoiler__title{
+    display: inline-block;
+  }
+  .spoiler-title{
+    position: relative;
+    padding: 0 30px 0 55px;
+  }
+  .spoiler-title::before{
+    content: attr(data-num);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   body {
     font-size: 18px;
   }
@@ -675,8 +707,11 @@ body.dark_mode .footer__copyright{
   .btn {
     font-size: 16px;
   }
-
+  .page__img{
+    position: relative;
+  }
   .page__img img {
+    position: absolute;
     width: 100%;
     object-fit: cover;
   }
@@ -747,6 +782,19 @@ body.dark_mode .footer__copyright{
 
 /* 767 */
 @media (max-width: 767px) {
+  .spoiler__title{
+    display: inline-block;
+  }
+  .spoiler-title{
+    position: relative;
+    padding: 0 25px 0 45px;
+  }
+  .spoiler-title::before{
+    content: attr(data-num);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   body {
     font-size: 16px;
   }
@@ -946,7 +994,7 @@ body.dark_mode .footer__copyright{
   }
 
   .spoiler__title {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .spoiler__content {
@@ -983,7 +1031,19 @@ body.dark_mode .footer__copyright{
 }
 
 @media (max-width: 580px) {
-
+  .spoiler__title{
+    display: inline-block;
+  }
+  .spoiler-title{
+    position: relative;
+    padding: 0 20px 0 30px;
+  }
+  .spoiler-title::before{
+    content: attr(data-num);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   /* -------------------theory------------------ */
   section h2 {
     margin-bottom: 35px;
@@ -1009,7 +1069,7 @@ body.dark_mode .footer__copyright{
     width: 3px;
   }
   .spoiler__title {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .spoiler__content {
@@ -1103,17 +1163,3 @@ body.dark_mode .footer__copyright{
 }
 
 
-.spoiler__title{
-  display: inline-block;
-}
-.spoiler-title{
-  position: relative;
-  padding: 0 70px;
-}
-.spoiler-title::before{
-  content: attr(data-num);
-  position: absolute;
-  top: 0;
-  left: 0;
-
-}
