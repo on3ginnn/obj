@@ -404,6 +404,7 @@ section h2 {
 
 .theory__item {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .spoiler {
@@ -507,7 +508,12 @@ body.dark_mode .spoiler__title{
   text-align: justify;
   line-height: 110%;
 }
-
+.spoiler__link_block{
+  margin-bottom: 20px;
+}
+.spoiler__link_block:last-child{
+  margin-bottom: 0px;
+}
 h3 {
   line-height: 110%;
   font-weight: 550;
