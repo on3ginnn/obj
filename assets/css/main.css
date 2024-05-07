@@ -547,7 +547,6 @@ h3 {
   border-radius: 20px;
   display: block;
   padding: 15px 50px 15px 20px;
-  min-width: 150px;
   position: relative;
   background: #005317;
   line-height: 110%;
@@ -1144,7 +1143,11 @@ body.dark_mode .footer__copyright{
     right: 10px;
   }
   .spoiler__link-text {
-    font-size: 20px;
+    overflow-wrap: break-word;
+    /* word-break: normal; */
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
   }
 
   /* -----------------footer----------------- */
